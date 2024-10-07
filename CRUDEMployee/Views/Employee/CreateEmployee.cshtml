@@ -1,0 +1,123 @@
+﻿@model EmpolyeeMSWeb.Models.Employees
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Create Employee</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="CreateEmployee">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <!-- Employee Name -->
+                        <div class="form-group mb-3">
+                            <label asp-for="EmployeeName" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="EmployeeName" class="form-control" placeholder="Enter employee name" />
+                            </div>
+                            <span asp-validation-for="EmployeeName" class="text-danger"></span>
+                        </div>
+
+                        <!-- Designation -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Designetion" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-briefcase-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="Designetion" class="form-control" placeholder="Enter designation" />
+                            </div>
+                            <span asp-validation-for="Designetion" class="text-danger"></span>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Address" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-geo-alt-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="Address" class="form-control" placeholder="Enter address" />
+                            </div>
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <!-- Join Date -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Joindate" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-calendar-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="Joindate" class="form-control" type="date" />
+                            </div>
+                            <span asp-validation-for="Joindate" class="text-danger"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="Email" class="form-control" placeholder="Enter email address" />
+                            </div>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-lock-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="Password" class="form-control" type="password" placeholder="Enter password" />
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="form-group mb-3">
+                            <label asp-for="Confirmpassword" class="form-label"></label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-lock-fill"></i> <!-- Bootstrap icon -->
+                                </span>
+                                <input asp-for="Confirmpassword" class="form-control" type="password" placeholder="Confirm password" />
+                            </div>
+                            <span asp-validation-for="Confirmpassword" class="text-danger"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-group text-center">
+                            <input type="submit" value="Create" class="btn btn-primary px-5" />
+                            <a asp-action="Index" class="btn btn-secondary ms-2 px-4">Back to List</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Back to List Link -->
+            <div class="mt-3 text-center">
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

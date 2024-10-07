@@ -1,0 +1,47 @@
+﻿@model EmpolyeeMSWeb.Models.Employees
+
+@{
+    ViewData["Title"] = "GetEmployeeById";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white text-center">
+                    <h1 class="mb-0">Employee Details</h1>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-primary">Employee Information</h4>
+                    <hr />
+
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Employee ID:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Id)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Name:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.EmployeeName)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Designation:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Designetion)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Address:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Address)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Join Date:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Joindate)</dd>
+
+                        <dt class="col-sm-4 fw-bold">Email:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Email)</dd>
+                    </dl>
+
+                    <div class="text-center mt-4">
+                        @Html.ActionLink("Edit", "UpdateEmployee", new { id = Model.Id }, new { @class = "btn btn-warning px-4" })
+                        <a asp-action="Index" class="btn btn-secondary ms-2 px-4">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
