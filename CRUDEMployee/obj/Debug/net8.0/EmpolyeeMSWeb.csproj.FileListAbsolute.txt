@@ -238,3 +238,4 @@ C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\CR
 C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\CRUDEMployee\obj\Debug\net8.0\EmpolyeeMSWeb.pdb
 C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\CRUDEMployee\obj\Debug\net8.0\EmpolyeeMSWeb.genruntimeconfig.cache
 C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\CRUDEMployee\obj\Debug\net8.0\ref\EmpolyeeMSWeb.dll
+C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\CRUDEMployee\obj\Debug\net8.0\EmpolyeeMSWeb.sourcelink.json

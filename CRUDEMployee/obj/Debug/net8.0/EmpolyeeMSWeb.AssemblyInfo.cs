@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmpolyeeMSWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+575a2cf596c502a263b3f80805a0a65eb19ffe4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmpolyeeMSWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmpolyeeMSWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
