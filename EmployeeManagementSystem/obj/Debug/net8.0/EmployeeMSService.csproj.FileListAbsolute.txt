@@ -265,3 +265,4 @@ C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\Em
 C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeMSService.pdb
 C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeMSService.genruntimeconfig.cache
 C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net8.0\ref\EmployeeMSService.dll
+C:\Users\susha\Downloads\EmployeeManagementSystemzip\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net8.0\EmployeeMSService.sourcelink.json
